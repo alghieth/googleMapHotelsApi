@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map Api</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="mapContainer"></div>
+    <div class="bst-sidebar flex-column left-div">
+        <header>
+            <h1>فنادق</h1>
+            <h2>إبحث عن الفندق المناسب</h2>
+        </header>
+        <form id="input_search" class="flex-column">
+            <input type="text" placeholder="أدخل اسم الدولة" id="search">
+            <ul class="auto_sggest_list" id="auto_sggest_list"></ul>
+            <input type="text" id="countries_input" placeholder="أختر اسم الدولة">
+            <ul id="countries_list"></ul>
+            <button type="submit" class="lis-primary-btn">بحث</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+    <!-- add Inline Code from google init -->
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+</script>
+</body>
+</html>
